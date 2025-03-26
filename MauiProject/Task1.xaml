@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProject.Task1">
+
+    <ContentPage.Content>
+        <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="25">
+
+            <Grid WidthRequest="400" HeightRequest="200"
+                  RowSpacing="20"
+                  VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Variable 1"
+                    FontSize="20"/>
+                <Entry
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    x:Name="Variable1"
+                    WidthRequest="100"
+                    TextChanged="Variable_OnTextChanged"/>
+
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Variable 2"
+                    FontSize="20"/>
+                <Entry
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    x:Name="Variable2"
+                    WidthRequest="100"
+                    Keyboard="Numeric"
+                    TextChanged="Variable_OnTextChanged"/>
+
+                <Label
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Text="Result"
+                    FontSize="20"/>
+                <Entry
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    x:Name="Result"
+                    WidthRequest="100"
+                    IsReadOnly="True"/>
+
+                <Label
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Text="Average"
+                    FontSize="20"/>
+                <Entry
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    x:Name="Average"
+                    WidthRequest="100"
+                    IsReadOnly="True"/>
+            </Grid>
+            <HorizontalStackLayout Width="400" HorizontalOptions="Center" Spacing="20">
+                <Button
+                    x:Name="CalculateButton"
+                    Text="Calculate"
+                    HorizontalOptions="Center"
+                    Clicked="CalculateButton_OnClicked"
+                    WidthRequest="100"/>
+                <Button
+                    x:Name="ResetButton"
+                    Text="Reset"
+                    HorizontalOptions="Center"
+                    Clicked="ResetButton_OnClicked"
+                    WidthRequest="100"/>
+                <Button
+                    x:Name="ExitButton"
+                    Text="Exit"
+                    HorizontalOptions="Center"
+                    Clicked="ExitButton_OnClicked"
+                    WidthRequest="100"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
