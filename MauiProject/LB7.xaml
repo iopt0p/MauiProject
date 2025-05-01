@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProject.LB7"
+             Title="Lab work 7">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <FlexLayout VerticalOptions="Start"
+                        HorizontalOptions="Center"
+                        Padding="100">
+
+                <Border Padding="20"
+                        HeightRequest="400"
+                        WidthRequest="500"
+                        Margin="0, 0, 60, 0 ">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <ScrollView>
+                        <Label x:Name="StudentInfoLabel"
+                               FontSize="16"
+                               Text="Some Text"/>
+                    </ScrollView>
+                </Border>
+
+                <ContentView>
+                    <FlexLayout Direction="Column"
+                                JustifyContent="SpaceBetween">
+                        <Button x:Name="AddStudentButton"
+                                Text="Add Student"
+                                Clicked="AddStudent"
+                                WidthRequest="200"/>
+
+                        <Button x:Name="QuitButton"
+                                Text="Exit"
+                                Clicked="QuitApp"
+                                WidthRequest="200"/>
+                    </FlexLayout>
+                </ContentView>
+
+            </FlexLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

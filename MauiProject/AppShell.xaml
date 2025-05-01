@@ -17,4 +17,8 @@
         ContentTemplate="{DataTemplate local:LB6}"
         Route="LB6" />
 
+    <ShellContent
+        Title="Lab work 7"
+        ContentTemplate="{DataTemplate local:LB7}"
+        Route="LB7" />
 </Shell>
