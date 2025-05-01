@@ -2,7 +2,8 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiProject.Task1">
+             x:Class="MauiProject.LB6"
+             Title="Lab work 6">
 
     <ContentPage.Content>
         <ScrollView>

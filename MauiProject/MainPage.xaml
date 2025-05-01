@@ -11,6 +11,9 @@
                 x:Name="Task1Button"
                 Text="Go to Task1"
                 Clicked="Task1Button_OnClicked"/>
+                x:Name="Lb6Button"
+                Text="Go to Lab work 6"
+                Clicked="Lb6Button_OnClicked"/>
         </VerticalStackLayout>
     </ScrollView>
 

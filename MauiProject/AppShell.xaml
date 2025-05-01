@@ -13,8 +13,8 @@
         Route="MainPage" />
 
     <ShellContent
-        Title="Task1"
-        ContentTemplate="{DataTemplate local:Task1}"
-        Route="Task1" />
+        Title="Lab work 6"
+        ContentTemplate="{DataTemplate local:LB6}"
+        Route="LB6" />
 
 </Shell>

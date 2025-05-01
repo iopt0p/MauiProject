@@ -7,8 +7,9 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    private void Task1Button_OnClicked(object? sender, EventArgs e)
+    private void Lb6Button_OnClicked(object? sender, EventArgs e)
     {
         Navigation.PushAsync(new Task1());
+        Navigation.PushAsync(new LB6());
     }
 }

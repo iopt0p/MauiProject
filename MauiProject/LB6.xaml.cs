@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MauiProject;
 
-public partial class Task1 : ContentPage
+public partial class LB6 : ContentPage
 {
-    public Task1()
+    public LB6()
     {
         InitializeComponent();
     }
@@ -21,7 +21,6 @@ public partial class Task1 : ContentPage
         {
             ((Entry) sender).Text = e.OldTextValue;
         }
-
     }
 
     private void CalculateButton_OnClicked(object? sender, EventArgs e)
