@@ -12,7 +12,7 @@ public partial class MainPage : ContentPage
         Navigation.PushAsync(new LB6());
     }
 
-    private void Lb7Button_OnClickedButton_OnClicked(object? sender, EventArgs e)
+    private void Lb7Button_OnClicked(object? sender, EventArgs e)
     {
         Navigation.PushAsync(new LB7());
     }
