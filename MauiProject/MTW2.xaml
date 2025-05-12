@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProject.MTW2">
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout
+                Padding="30,0"
+                Spacing="25">
+                <Button
+                    x:Name="Task1"
+                    Text="Go to Task 1"
+                    Clicked="Task1_OnClicked"/>
+
+                <Button
+                    x:Name="Task2"
+                    Text="Go to Task 2"
+                    Clicked="Task2_OnClicked"/>
+
+                <Button
+                    x:Name="Task3"
+                    Text="Go to Task 3"
+                    Clicked="Task3_OnClicked"/>
+
+                <Button
+                    x:Name="Task4"
+                    Text="Go to Task 4"
+                    Clicked="Task4_OnClicked"/>
+
+                <Button
+                    x:Name="Task5"
+                    Text="Go to Task 5"
+                    Clicked="Task5_OnClicked"/>
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

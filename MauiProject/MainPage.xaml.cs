@@ -16,4 +16,9 @@ public partial class MainPage : ContentPage
     {
         Navigation.PushAsync(new LB7());
     }
+
+    private void Mtw2Button_OnClicked(object? sender, EventArgs e)
+    {
+        Navigation.PushAsync(new MTW2());
+    }
 }

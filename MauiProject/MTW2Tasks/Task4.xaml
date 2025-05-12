@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProject.MTW2Tasks.Task4">
+    <ContentPage.Content>
+
+        <ScrollView VerticalOptions="Start"
+                    HorizontalOptions="Center">
+            <FlexLayout>
+
+                <Frame>
+                    <Editor x:Name="TextEditor"
+                            TextChanged="TextEditor_OnTextChanged"
+                            WidthRequest="500"
+                            HeightRequest="300"/>
+                </Frame>
+
+                <Label x:Name="ResultLabel"
+                       Padding="50"
+                       Text="Start typing text"/>
+
+            </FlexLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

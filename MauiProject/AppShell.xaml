@@ -21,4 +21,9 @@
         Title="Lab work 7"
         ContentTemplate="{DataTemplate local:LB7}"
         Route="LB7" />
+
+    <ShellContent
+        Title="Modular test work 2"
+        ContentTemplate="{DataTemplate local:MTW2}"
+        Route="MTW2" />
 </Shell>

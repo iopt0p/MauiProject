@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProject.MTW2Tasks.Task2">
+    <ContentPage.Content>
+        <ScrollView VerticalOptions="Start"
+                    HorizontalOptions="Center">
+
+            <FlexLayout Direction="Column">
+
+               <Button x:Name="CountButton"
+                       Text="Click me"
+                       Clicked="CountButton_OnClicked"/>
+
+               <Label x:Name="ResultLabel"
+                      Padding="50"
+                      Text="Click to start count"
+                      FontSize="40"
+                      HorizontalOptions="Center"/>
+
+               <Button x:Name="ClearButton"
+                       Text="Clear"
+                       Clicked="ClearButton_OnClicked"/>
+
+            </FlexLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -19,7 +19,7 @@
 
             <Button
                 x:Name="Mtw2Button"
-                Text="Go to Lab work 7"
+                Text="Go to Modular test work 2"
                 Clicked="Mtw2Button_OnClicked"/>
         </VerticalStackLayout>
     </ScrollView>
